@@ -39,7 +39,7 @@ impl Connection {
         let settings = Builder::new()
             .http2_initial_stream_window_size(endpoint.init_stream_window_size)
             .http2_initial_connection_window_size(endpoint.init_connection_window_size)
-            .http2_only(true)
+            //.http2_only(true)
             .clone();
 
         let stack = ServiceBuilder::new()

@@ -290,7 +290,7 @@ impl Server {
         };
 
         let server = hyper::Server::builder(incoming)
-            .http2_only(true)
+            //.http2_only(true)
             .http2_initial_connection_window_size(init_connection_window_size)
             .http2_initial_stream_window_size(init_stream_window_size)
             .http2_max_concurrent_streams(max_concurrent_streams);
